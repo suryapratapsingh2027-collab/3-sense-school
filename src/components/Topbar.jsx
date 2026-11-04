@@ -1,0 +1,2 @@
+import { MapPin, Mail } from 'lucide-react'
+export default function Topbar(){return <div className="bg-navy py-2 text-[11px] text-blue-100"><div className="mx-auto flex w-[min(1180px,90%)] flex-wrap justify-between gap-2"><span className="flex items-center gap-2"><MapPin size={13}/> Shahpur, Madhya Pradesh</span><span className="flex items-center gap-2"><Mail size={13}/> 3sensegroup2010@gmail.com</span></div></div>}

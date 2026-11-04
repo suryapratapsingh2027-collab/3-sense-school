@@ -1,0 +1,6 @@
+import PageHero from '../components/PageHero'
+import SectionHeading from '../components/SectionHeading'
+import ProgramCard from '../components/ProgramCard'
+import { Atom,Dna,Award,Target,MessageCircle,Calculator,Flower2,Sparkles } from 'lucide-react'
+const items=[[Atom,'Maths & Science','Explore · Question · Create'],[Dna,'Bio-Science','Discover the science of life'],[Award,'Career Guidelines',"Prepare for what's next"],[Target,'IIT / NEET Foundation','Build strong fundamentals'],[MessageCircle,'English Speaking','Communicate with confidence'],[Calculator,'Vedic Maths & Abacus','Think faster, learn smarter'],[Flower2,'Meditation & Yoga','Balance mind and body'],[Sparkles,'Vision Board & Mid Brain','Imagine · Focus · Achieve']]
+export default function Programs(){return <main><PageHero eyebrow="Learning pathways" title="Find your spark. Build your future." description="Explore academic streams and enrichment pathways designed to help students discover their strengths."/><section className="mx-auto w-[min(1180px,90%)] py-20"><SectionHeading kicker="Explore programs" title="Learning with purpose and curiosity"/><div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{items.map(([icon,title,description],i)=><ProgramCard key={title} icon={icon} title={title} description={description} index={i}/>)}</div></section></main>}

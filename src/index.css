@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{font-family:'DM Sans',sans-serif;color:#152044;background:#f8faff;font-synthesis:none;text-rendering:optimizeLegibility}
+html{scroll-behavior:smooth}
+body{margin:0;min-width:320px}
+*{box-sizing:border-box}
+button,input,textarea,select{font:inherit}
+.form-input{display:block;width:100%;margin-top:8px;border:1px solid #e2e8f0;border-radius:13px;background:#fbfcff;padding:13px 14px;color:#152044;outline:none;transition:.2s}
+.form-input:focus{border-color:#536dc4;box-shadow:0 0 0 3px #253d9b18}
+::selection{background:#f6c84b;color:#111d68}
